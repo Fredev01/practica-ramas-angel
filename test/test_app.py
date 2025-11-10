@@ -6,7 +6,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 @pytest.fixture
 def cliente():
-    from app import app
+    from app_unit import app
 
     app.config['TESTING'] = True
     with app.test_client() as c:
