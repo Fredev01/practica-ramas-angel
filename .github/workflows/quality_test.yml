@@ -1,8 +1,9 @@
-name: Build
+name: Test de calidad de código con SonarQube
 on:
   push:
     branches: [main, feature/quality-test]
   pull_request:
+    branches: [main]
     types: [opened, synchronize, reopened]
 jobs:
   sonarqube:
